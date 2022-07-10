@@ -15,7 +15,6 @@ struct ContentView: View {
             
         if( moveList[0]?.indicator == moveList[1]?.indicator && moveList[1]?.indicator == moveList[2]?.indicator && moveList[0] != nil){
                     isWin = true
-            
             }
         
        else if( moveList[3]?.indicator == moveList[4]?.indicator && moveList[4]?.indicator == moveList[5]?.indicator && moveList[3] != nil){
@@ -83,7 +82,7 @@ struct ContentView: View {
                                     
                             
                           
-                        }.alert("\(winnerPlayer) is Win !! 🎉🎉", isPresented: $isWin, actions: {
+                        }.alert("\(winnerPlayer) Won !! 🎉🎉", isPresented: $isWin, actions: {
                             
                         })
                     })
